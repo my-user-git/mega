@@ -48,6 +48,104 @@
 .section-managers__prev:hover {
   color: rgba(48, 82, 158, 0.6);
 }
+.section-managers__btn {
+  transition: background-color 0.3s ease-in-out;
+}
+.section-managers__btn:hover {
+  background-color: #30529f;
+}
+.section-managers__phone {
+  transition: color 0.3s ease-in-out;
+}
+.section-managers__phone:hover {
+  color: #f39c37;
+}
+.section-managers__phone:focus {
+  color: #f39c37;
+}
+.section-managers__email {
+  transition: color 0.3s ease-in-out;
+}
+.section-managers__email:hover {
+  color: #f39c37;
+}
+.section-managers__email:focus {
+  color: #f39c37;
+}
+.section-managers__photo:hover {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+}
+@-webkit-keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
 
 * {
   box-sizing: border-box;
@@ -151,6 +249,9 @@ input {
   display: flex;
   flex-direction: column;
   height: auto;
+}
+.section-managers__photo {
+  cursor: pointer;
 }
 .section-managers__name-h2 {
   margin-bottom: 50px;

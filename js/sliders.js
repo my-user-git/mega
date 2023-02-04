@@ -95,14 +95,12 @@ managersList.forEach((e, i) => {
         <h2 class="section-managers__name-h2">
             ${e.name}
         </h2>
-
         <a class="section-managers__phone" href="tel:${e.phone}">
             ${e.phone}
         </a>
         <a class="section-managers__email" href="mailto:${e.email}">
             ${e.email}
         </a>
-
         <h3 class="section-managers__position-h3">
         ${e.about}
         </h3>
