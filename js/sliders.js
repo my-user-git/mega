@@ -1,45 +1,35 @@
-const materials = new Swiper('.section-managers__swiper', {
+const managers = new Swiper('.section-managers__swiper', {
   // Optional parameters
   // direction: 'horizontal',
-
-  slidesPerView: 1,
-  spaceBetween: 30,
-
-  grid: {
-    row: 2,
-  },
-
   loop: false,
-
-  // If we need pagination
-  // pagination: {
-  //   el: '.swiper-pagination',
-  // },
 
   breakpoints: {
 
-    992: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 5,
+      grid: {
+        rows: 2,
+      },
+    },
+
+    993: {
       direction: 'horizontal',
       slidesPerView: 2,
-      spaceBetween: 20
+      spaceBetween: 20,
     },
 
     1200: {
+      direction: 'horizontal',
       slidesPerView: 3,
-      spaceBetween: 30
+      spaceBetween: 30,
     }
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: '.section-managers__next',
     prevEl: '.section-managers__prev',
   },
-
-  // And if we need scrollbar
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  // },
 });
 
 
@@ -82,7 +72,8 @@ let managersList = [
 ]
 
 
-//Manager list
+//Managers list
+
 document.querySelector('.section-managers__swiper').querySelector('.section-managers__wrapper').innerHTML = ``
 managersList.forEach((e, i) => {
   let dur = Math.round(Math.random() * (40 - 10) + 10)
@@ -91,7 +82,7 @@ managersList.forEach((e, i) => {
 
     <div class="swiper-slide section-managers__slide">
     <svg class="section-managers__photo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" id="blobSvg" style="opacity: 1;">
-    <image class="section-managers__img" x="0" y="0" clip-path="url(#shapeArticle${i})" xlink:href="./images/managers/${e.photo}" preserveAspectRatio="none"></image>
+    <image class="section-managers__img" x="0" y="0" width="100%" height="100%" clip-path="url(#shapeArticle${i})" xlink:href="./images/managers/${e.photo}" preserveAspectRatio="none"></image>
             </image>
             <clipPath id="shapeArticle${i}">
             <path id="blob" fill="url(#gradient)" style="opacity: 1;">
@@ -119,3 +110,4 @@ managersList.forEach((e, i) => {
     </div>
     `
 })
+
