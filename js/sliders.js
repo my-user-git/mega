@@ -7,7 +7,7 @@ const managers = new Swiper('.section-managers__swiper', {
 
     320: {
       slidesPerView: 1,
-      spaceBetween: 5,
+      spaceBetween: 30,
       grid: {
         rows: 2,
       },
@@ -16,7 +16,7 @@ const managers = new Swiper('.section-managers__swiper', {
     993: {
       direction: 'horizontal',
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 30,
     },
 
     1200: {
@@ -82,7 +82,7 @@ managersList.forEach((e, i) => {
 
     <div class="swiper-slide section-managers__slide">
     <svg class="section-managers__photo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" id="blobSvg" style="opacity: 1;">
-    <image class="section-managers__img" x="0" y="0" width="100%" height="100%" clip-path="url(#shapeArticle${i})" xlink:href="./images/managers/${e.photo}" preserveAspectRatio="none"></image>
+    <image class="section-managers__img" x="0" y="0" width="100%" clip-path="url(#shapeArticle${i})" xlink:href="./images/managers/${e.photo}" preserveAspectRatio="none"></image>
             </image>
             <clipPath id="shapeArticle${i}">
             <path id="blob" fill="url(#gradient)" style="opacity: 1;">
