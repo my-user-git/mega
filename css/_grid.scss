@@ -10,6 +10,10 @@
     column-gap: 2vw;
   }
 
+  &__buttons {
+    grid-area: right-top;
+  }
+
   &__clients {
     grid-area: left;
   }
@@ -19,9 +23,4 @@
     width: 100%;
     height: 100%;
   }
-
-  &__buttons {
-    grid-area: right-top;
-  }
-
 }

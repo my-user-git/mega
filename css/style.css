@@ -32,6 +32,9 @@
   -moz-column-gap: 2vw;
        column-gap: 2vw;
 }
+.section-managers__buttons {
+  grid-area: right-top;
+}
 .section-managers__clients {
   grid-area: left;
 }
@@ -39,9 +42,6 @@
   grid-area: right-bottom;
   width: 100%;
   height: 100%;
-}
-.section-managers__buttons {
-  grid-area: right-top;
 }
 
 /* section-managers */
@@ -163,7 +163,6 @@
 html,
 body {
   position: relative;
-  background-color: #fff;
 }
 
 body {
